@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <!-- SEO & AI EO Meta Tags -->
-    <title>Sam's Elite Detailing | Professional Car Detailing in Wesley Chapel, FL</title>
+    <title>Experience the Best Mobile Car Detailing in Wesley Chapel | Sam's Elite</title>
     <meta name="description" content="Sam's Elite Detailing provides professional mobile and in-shop car detailing services in Wesley Chapel, Florida. Services include full detailing, paint protection, and interior deep cleaning.">
     <meta name="keywords" content="Car detailing Wesley Chapel FL, Mobile car detailing Wesley Chapel, Auto detailing Wesley Chapel, Paint protection, Interior car cleaning, Sam's Elite Detailing">
     <meta name="author" content="Sam's Elite Detailing">
@@ -19,7 +19,8 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Added Nunito for a more human-friendly, inviting title font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- FontAwesome (FA) Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -64,6 +65,7 @@
             --color-white: #ffffff;
             
             --font-heading: 'Montserrat', sans-serif;
+            --font-title: 'Nunito', sans-serif; /* New variable for the friendly title */
             --font-body: 'Open Sans', sans-serif;
             
             --container-width: 1200px;
@@ -167,7 +169,18 @@
             background-size: cover; background-position: center;
         }
         .hero-content { max-width: 800px; z-index: 2; }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1.5rem; text-transform: uppercase; }
+        
+        /* Updated Human-Friendly Title Styles */
+        .hero h1 { 
+            font-family: var(--font-title);
+            font-weight: 800;
+            font-size: 3rem; 
+            margin-bottom: 1.5rem; 
+            text-transform: none; /* Removed uppercase to feel more natural */
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+        
         .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: var(--color-silver-light); max-width: 600px; }
         
         .hero-actions-wrapper { display: flex; flex-direction: column; gap: 1rem; }
@@ -271,6 +284,7 @@
         /* Media Queries */
         @media (max-width: 480px) {
             .logo-text { font-size: 1.05rem; } 
+            .hero h1 { font-size: 2.25rem; }
         }
 
         @media (min-width: 768px) {
@@ -361,7 +375,8 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Professional Car Detailing in Wesley Chapel</h1>
+                    <!-- Changed the title text and applied the new font via CSS -->
+                    <h1>Experience the Joy of a Perfectly Clean Car in Wesley Chapel</h1>
                     <p>Premium mobile and in-shop car detailing services. We provide comprehensive cleaning, paint correction, and protection to restore your vehicle to peak condition.</p>
                     
                     <div class="hero-actions-wrapper">
