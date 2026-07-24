@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- SEO & AI EO Meta Tags -->
+    <title>Sam's Elite Detailing | Professional Car Detailing in Wesley Chapel, FL</title>
+    <meta name="description" content="Sam's Elite Detailing provides professional mobile and in-shop car detailing services in Wesley Chapel, Florida. Services include full detailing, paint protection, and interior deep cleaning.">
+    <meta name="keywords" content="Car detailing Wesley Chapel FL, Mobile car detailing Wesley Chapel, Auto detailing Wesley Chapel, Paint protection, Interior car cleaning, Sam's Elite Detailing">
+    <meta name="author" content="Sam's Elite Detailing">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sam's Elite Detailing | Wesley Chapel Car Detailing">
+    <meta property="og:description" content="Professional mobile and in-shop car detailing services serving Wesley Chapel, Florida.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome (FA) Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data for AI EO and Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoBodyShop",
+      "name": "Sam's Elite Detailing",
+      "image": "Sam_Client/hero-bg.jpg",
+      "@id": "",
+      "url": "https://www.samselitedetailing.com",
+      "telephone": "+18136023623",
+      "email": "Samuelh0623@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4709 Royal Birkdale Way",
+        "addressLocality": "Wesley Chapel",
+        "addressRegion": "FL",
+        "postalCode": "33543",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 28.1884,
+        "longitude": -82.3168
+      },
+      "description": "Premium mobile and in-shop car detailing services in Wesley Chapel, Florida.",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- CSS -->
+    <style>
+        :root {
+            --color-primary: #9e1213;
+            --color-primary-hover: #7a0e0e;
+            --color-black: #000000;
+            --color-dark-gray: #1a1a1a;
+            --color-silver: #686667;
+            --color-silver-light: #cccccc;
+            --color-white: #ffffff;
+            
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            
+            --container-width: 1200px;
+        }
+
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-black);
+            color: var(--color-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+        p { color: var(--color-silver-light); margin-bottom: 1rem; }
+        a { text-decoration: none; color: var(--color-white); transition: color 0.2s ease; }
+        a:hover { color: var(--color-silver-light); }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Utility */
+        .container { width: 100%; max-width: var(--container-width); margin: 0 auto; padding: 0 1.5rem; }
+        .section-padding { padding: 5rem 0; }
+        .text-center { text-align: center; }
+        .section-title {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+            padding: 1rem 2rem; font-family: var(--font-heading); font-weight: 600; font-size: 1rem;
+            text-transform: uppercase; letter-spacing: 1px; border: 2px solid transparent;
+            cursor: pointer; min-height: 48px; transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .btn-primary { background-color: var(--color-primary); color: var(--color-white); }
+        .btn-primary:hover, .btn-primary:focus { background-color: var(--color-primary-hover); color: var(--color-white); }
+        .btn-outline { background-color: transparent; color: var(--color-white); border-color: var(--color-silver); }
+        .btn-outline:hover, .btn-outline:focus { border-color: var(--color-white); background-color: var(--color-dark-gray); }
+        .btn-block { display: flex; width: 100%; }
+
+        /* Navigation & Inline Logo */
+        .navbar {
+            position: fixed; top: 0; left: 0; width: 100%;
+            background-color: var(--color-black); z-index: 1000;
+            border-bottom: 1px solid var(--color-dark-gray);
+        }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+        
+        .navbar-brand { display: flex; align-items: center; gap: 0.75rem; height: 100%; }
+        
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            background-color: var(--color-black);
+            display: flex; align-items: center; justify-content: center;
+            overflow: hidden;
+        }
+        .logo-container img { width: 100%; height: 100%; object-fit: contain; }
+        
+        .logo-text {
+            font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        .nav-links { display: none; gap: 2rem; align-items: center; }
+        .nav-links a { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .nav-actions { display: none; align-items: center; gap: 1.5rem; }
+        .header-socials { display: flex; gap: 1.25rem; align-items: center; border-right: 1px solid var(--color-dark-gray); padding-right: 1.5rem; }
+        .header-socials a { font-size: 1.15rem; color: var(--color-white); transition: color 0.2s ease; }
+        .header-socials a:hover { color: var(--color-primary); }
+        .contact-number { font-weight: 700; font-size: 1.1rem; }
+        
+        .mobile-menu-btn { display: block; background: none; border: none; color: var(--color-white); font-size: 1.5rem; cursor: pointer; padding: 0.5rem; }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed; top: 80px; left: 0; width: 100%; height: calc(100vh - 80px);
+            background-color: var(--color-black); padding: 2rem 1.5rem;
+            display: none; flex-direction: column; gap: 1.5rem; overflow-y: auto;
+            border-top: 1px solid var(--color-dark-gray); z-index: 999;
+        }
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a { font-size: 1.25rem; font-weight: 600; padding: 1rem 0; border-bottom: 1px solid var(--color-dark-gray); display: block; }
+        .mobile-socials { display: flex; gap: 1.5rem; padding: 1rem 0; font-size: 1.5rem; border-bottom: 1px solid var(--color-dark-gray); }
+
+        /* Hero Section */
+        .hero {
+            position: relative; min-height: 80vh; display: flex; align-items: center;
+            padding-top: 80px; background-color: var(--color-dark-gray);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Sam_Client/hero-bg.jpg');
+            background-size: cover; background-position: center;
+        }
+        .hero-content { max-width: 800px; z-index: 2; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1.5rem; text-transform: uppercase; }
+        .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: var(--color-silver-light); max-width: 600px; }
+        
+        .hero-actions-wrapper { display: flex; flex-direction: column; gap: 1rem; }
+        .hero-buttons { display: flex; flex-direction: column; gap: 1rem; }
+
+        /* Info Bar */
+        .info-bar { background-color: var(--color-primary); padding: 2rem 0; }
+        .info-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
+        .info-item i { font-size: 1.5rem; color: var(--color-white); margin-bottom: 0.5rem; }
+        .info-item h3 { font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--color-white); text-transform: uppercase; }
+        .info-item p { color: var(--color-white); margin: 0; font-size: 0.9rem; }
+
+        /* Services */
+        .services-section { background-color: var(--color-black); }
+        .services-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3rem; }
+        .service-card { background-color: var(--color-dark-gray); border: 1px solid var(--color-silver); padding: 2rem; height: 100%; display: flex; flex-direction: column; }
+        .service-icon { font-size: 2rem; color: var(--color-primary); margin-bottom: 1rem; }
+        .service-card h3 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-white); }
+        .service-card p { flex-grow: 1; }
+
+        /* About Section & Before/After Slider */
+        .split-section { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+        
+        .slider-container {
+            position: relative; width: 100%; aspect-ratio: 4/3;
+            overflow: hidden; border: 1px solid var(--color-silver);
+            background-color: var(--color-black);
+        }
+        .slider-container img {
+            width: 100%; height: 100%; object-fit: cover;
+            position: absolute; top: 0; left: 0; pointer-events: none;
+        }
+        .slider-image-before { z-index: 1; }
+        .slider-image-after { z-index: 2; clip-path: inset(0 50% 0 0); }
+        
+        .slider-input {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 3; opacity: 0; cursor: col-resize; margin: 0;
+        }
+        .slider-line {
+            position: absolute; top: 0; left: 50%; width: 4px; height: 100%;
+            background: var(--color-white); z-index: 2; transform: translateX(-50%);
+            pointer-events: none; box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .slider-button {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 36px; height: 36px; background: var(--color-primary);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: var(--color-white); border: 2px solid var(--color-white);
+        }
+
+        .benefit-list { list-style: none; margin-top: 2rem; }
+        .benefit-list li { position: relative; padding-left: 2rem; margin-bottom: 1rem; color: var(--color-white); }
+        .benefit-list li i { position: absolute; left: 0; top: 4px; color: var(--color-primary); }
+
+        /* Gallery */
+        .gallery-section { background-color: var(--color-dark-gray); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 3rem; }
+        .gallery-item img { width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--color-silver); }
+
+        /* Reviews */
+        .reviews-section { background-color: var(--color-black); }
+        .reviews-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 3rem; }
+        .review-card { background-color: var(--color-dark-gray); padding: 2rem; border-left: 4px solid var(--color-primary); }
+        .stars { color: #f5b301; margin-bottom: 1rem; font-size: 1rem; letter-spacing: 2px; }
+        .review-text { font-style: italic; margin-bottom: 1.5rem; color: var(--color-white); }
+        .reviewer-name { font-weight: 700; color: var(--color-silver-light); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; }
+
+        /* Contact Area */
+        .contact-section { background-color: var(--color-dark-gray); border-top: 2px solid var(--color-primary); }
+        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+        .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+        .contact-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem; }
+        .contact-item i { color: var(--color-primary); font-size: 1.5rem; margin-top: 2px; }
+        .contact-item-text h4 { margin-bottom: 0.25rem; font-size: 1.1rem; color: var(--color-white); }
+
+        /* Forms */
+        .form-group { margin-bottom: 1.5rem; }
+        .form-control { width: 100%; padding: 1rem; background-color: var(--color-black); border: 1px solid var(--color-silver); color: var(--color-white); font-family: var(--font-body); font-size: 1rem; }
+        .form-control:focus { outline: none; border-color: var(--color-primary); }
+        textarea.form-control { min-height: 120px; resize: vertical; }
+
+        /* Footer */
+        .footer { background-color: var(--color-black); padding: 3rem 0; border-top: 1px solid var(--color-dark-gray); }
+        .footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+
+        /* Floating Mobile CTA */
+        .floating-cta {
+            position: fixed; bottom: 0; left: 0; width: 100%; display: flex; z-index: 998;
+            background-color: var(--color-black); border-top: 1px solid var(--color-dark-gray);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        .floating-btn {
+            flex: 1; padding: 1rem; text-align: center; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem;
+            border-right: 1px solid var(--color-dark-gray); display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+        }
+        .floating-btn:last-child { border-right: none; }
+        .floating-call { background-color: var(--color-primary); color: var(--color-white); }
+
+        /* Media Queries */
+        @media (max-width: 480px) {
+            .logo-text { font-size: 1.05rem; } 
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .hero p { font-size: 1.25rem; }
+            .hero-buttons { flex-direction: row; }
+            
+            .info-grid { grid-template-columns: repeat(3, 1fr); }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+            .split-section { grid-template-columns: 1fr 1fr; }
+            .contact-grid { grid-template-columns: 1fr 1fr; }
+            
+            .floating-cta { display: none; }
+            body { padding-bottom: 0; }
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links { display: flex; }
+            .nav-actions { display: flex; }
+            .mobile-menu-btn { display: none; }
+            
+            .services-grid { grid-template-columns: repeat(4, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+            .reviews-grid { grid-template-columns: repeat(4, 1fr); }
+            
+            .section-title { font-size: 2.5rem; }
+            .footer-content { flex-direction: row; justify-content: space-between; text-align: left; }
+        }
+        
+        @media (max-width: 767px) {
+            body { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-brand" aria-label="Home">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Sam's Elite Detailing Logo">
+                </div>
+                <span class="logo-text">Sam's Elite Detailing</span>
+            </a>
+            
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="header-socials">
+                    <a href="https://www.instagram.com/samuelsdetail/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/photo/?fbid=122097346869392481&set=a.122097344439392481" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <a href="tel:+18136023623" class="contact-number"><i class="fa-solid fa-phone"></i> (813) 602-3623</a>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+        <div class="mobile-socials">
+            <a href="https://www.instagram.com/samuelsdetail/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile" style="border: none; padding: 0;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/photo/?fbid=122097346869392481&set=a.122097344439392481" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile" style="border: none; padding: 0;"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#reviews" class="mobile-link">Reviews</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="tel:+18136023623" class="btn btn-primary btn-block" style="margin-top: 1rem;"><i class="fa-solid fa-phone"></i> Call (813) 602-3623</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Professional Car Detailing in Wesley Chapel</h1>
+                    <p>Premium mobile and in-shop car detailing services. We provide comprehensive cleaning, paint correction, and protection to restore your vehicle to peak condition.</p>
+                    
+                    <div class="hero-actions-wrapper">
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Schedule Service</a>
+                            <a href="tel:+18136023623" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call For A Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Information Bar -->
+        <section class="info-bar" aria-label="Quick Information">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Serving Wesley Chapel, FL & Surrounding Areas</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-car"></i>
+                        <h3>Service Type</h3>
+                        <p>Mobile Detailing & In-Shop Appointments</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-star"></i>
+                        <h3>Quality</h3>
+                        <p>5-Star Rated Professional Service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section-padding services-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Detailing Services</h2>
+                    <p>Comprehensive cleaning and restoration solutions tailored to your vehicle's exact specifications.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <i class="fa-solid fa-spray-can-sparkles service-icon"></i>
+                        <h3>Full Detail</h3>
+                        <p>A complete reset for your vehicle. We execute a thorough cleaning of both the interior and exterior to restore factory-level cleanliness.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-car-burst service-icon"></i>
+                        <h3>Exterior Wash & Wax</h3>
+                        <p>We safely wash, decontaminate the clear coat, and apply a premium wax to protect your vehicle's paint and enhance its finish.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-soap service-icon"></i>
+                        <h3>Interior Deep Clean</h3>
+                        <p>Removal of stains, odors, and pet hair. Services include deep cleaning of carpets, leather conditioning, and detailing of all interior surfaces.</p>
+                    </article>
+                    <article class="service-card">
+                        <i class="fa-solid fa-shield-halved service-icon"></i>
+                        <h3>Paint Protection</h3>
+                        <p>Advanced exterior protection. Ask about our coating and paint correction services designed to maintain and protect your vehicle's long-term value.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (With Before/After Slider) -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="split-section">
+                    
+                    <!-- Before/After Image Slider -->
+                    <div class="slider-container">
+                        <img src="Sam_Client/about-before.jpg" alt="Car Detail Before" class="slider-image-before">
+                        <img src="Sam_Client/about-after.jpg" alt="Car Detail After" class="slider-image-after" id="sliderAfterImg">
+                        <div class="slider-line" id="sliderLine">
+                            <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider-input" id="beforeAfterSlider" aria-label="Before and after comparison slider">
+                    </div>
+
+                    <div class="split-content">
+                        <h2 class="section-title">Professional Quality, Guaranteed</h2>
+                        <p>Whether utilizing our mobile service at your location or visiting our Wesley Chapel shop, Sam's Elite Detailing provides an unparalleled level of service and automotive care.</p>
+                        
+                        <ul class="benefit-list">
+                            <li><i class="fa-solid fa-check"></i> Convenience: Mobile and in-shop service scheduling available.</li>
+                            <li><i class="fa-solid fa-check"></i> Quality Control: Strict adherence to professional detailing standards.</li>
+                            <li><i class="fa-solid fa-check"></i> Communication: Seamless booking process and transparent updates.</li>
+                            <li><i class="fa-solid fa-check"></i> Capabilities: Equipped to handle severe interior staining, pet hair, and exterior contamination.</li>
+                        </ul>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="#contact" class="btn btn-primary">Book an Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section-padding gallery-section" id="gallery">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Work Portfolio</h2>
+                    <p>Examples of our professional detailing results.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="Sam_Client/gallery-1.jpg" width="400" height="400" alt="Exterior car detailing result" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-2.jpg" width="400" height="400" alt="Interior car cleaning result" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-3.jpg" width="400" height="400" alt="Paint correction before and after" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-4.jpg" width="400" height="400" alt="Leather conditioning result" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-5.jpg" width="400" height="400" alt="Wheel and tire cleaning" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-6.jpg" width="400" height="400" alt="Engine bay detailing" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-7.jpg" width="400" height="400" alt="Carpet shampooing result" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-8.jpg" width="400" height="400" alt="Finished vehicle exterior" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="section-padding reviews-section" id="reviews">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p>Feedback from our customers regarding our services.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Great customer service and exceptional job. I’ll definitely use this company again."</p>
+                        <span class="reviewer-name">Jennifer Hernandez</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Sam does great work! I highly recommend him if you’re looking for high quality detailing and great prices!"</p>
+                        <span class="reviewer-name">RYAN TANK</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"I could eat off the carpets. Sam is the absolute best."</p>
+                        <span class="reviewer-name">Joey DiMarco</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Did a really good job! Went above and beyond."</p>
+                        <span class="reviewer-name">Judah Derry</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Really happy with how my car turned out! He did an awesome job inside and out, and it looks and feels like a brand new car. He took the time to pay attention to the little details and the whole process was easy! Definitely recommend them if you’re looking for a quality detail."</p>
+                        <span class="reviewer-name">Abigail Ruelas</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Sam's Elite Detailing did an amazing job on my Jeep! With three Labrador Retrievers, it was covered in dog hair, but they got it looking and smelling like new again. Their attention to detail was outstanding, and I couldn't be happier with the results. Highly recommend!"</p>
+                        <span class="reviewer-name">Courtney Patrick</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"My truck went from looking like it had just been through a mud hole to being the cleanest truck in town!! Sam’s elite detailing really is elite!"</p>
+                        <span class="reviewer-name">Brandon Cruz Jr</span>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="review-text">"Sam’s Elite Detailing completely blew me away! Sam’s attention to detail and seamless communication made my experience exceptional. Will definitely book again!"</p>
+                        <span class="reviewer-name">Vincent Imperial</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Info -->
+                    <address class="contact-info" style="font-style: normal;">
+                        <h2 class="section-title">Contact Information</h2>
+                        <p>Reach out directly to request a quote or schedule your detailing service.</p>
+                        
+                        <div class="contact-item" style="margin-top: 1rem;">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="contact-item-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+18136023623">(813) 602-3623</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <a href="mailto:Samuelh0623@gmail.com">Samuelh0623@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-map-pin"></i>
+                            <div class="contact-item-text">
+                                <h4>Service Location</h4>
+                                <p>4709 Royal Birkdale Way<br>Wesley Chapel, FL 33543</p>
+                            </div>
+                        </div>
+                    </address>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="bookingForm" class="booking-form" style="background: var(--color-black); padding: 2.5rem; border: 1px solid var(--color-silver);">
+                            <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Request a Quote</h3>
+                            
+                            <div class="form-group">
+                                <label for="name" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required autocomplete="name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required autocomplete="tel">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicle" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Vehicle Make & Model</label>
+                                <input type="text" id="vehicle" name="vehicle" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Service Requested</label>
+                                <textarea id="message" name="message" class="form-control"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo-text" style="margin: 0;">Sam's Elite Detailing</div>
+            <p>&copy; <span id="year"></span> Sam's Elite Detailing. All Rights Reserved. <br> Serving Wesley Chapel, Florida.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile CTA -->
+    <div class="floating-cta">
+        <a href="sms:+18136023623" class="floating-btn" style="background-color: var(--color-dark-gray); color: var(--color-white);"><i class="fa-solid fa-comment-sms"></i> Text Us</a>
+        <a href="tel:+18136023623" class="floating-btn floating-call"><i class="fa-solid fa-phone"></i> Call Us</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Footer Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('active');
+            
+            if (!isExpanded) {
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            } else {
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+        
+        // Before/After Slider Logic
+        const sliderInput = document.getElementById('beforeAfterSlider');
+        const sliderAfterImg = document.getElementById('sliderAfterImg');
+        const sliderLine = document.getElementById('sliderLine');
+
+        sliderInput.addEventListener('input', (e) => {
+            const sliderValue = e.target.value;
+            sliderAfterImg.style.clipPath = `inset(0 ${100 - sliderValue}% 0 0)`;
+            sliderLine.style.left = `${sliderValue}%`;
+        });
+    </script>
+</body>
+</html>
