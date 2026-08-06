@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <!-- SEO & AI EO Meta Tags -->
-    <title>Experience the Best Mobile Car Detailing in Wesley Chapel | Sam's Elite</title>
-    <meta name="description" content="Sam's Elite Detailing provides professional mobile and in-shop car detailing services in Wesley Chapel, Florida. Services include full detailing, paint protection, and interior deep cleaning.">
-    <meta name="keywords" content="Car detailing Wesley Chapel FL, Mobile car detailing Wesley Chapel, Auto detailing Wesley Chapel, Paint protection, Interior car cleaning, Sam's Elite Detailing">
+    <title>Best Mobile Car Detailing in Wesley Chapel & Tampa Bay | Sam's Elite</title>
+    <meta name="description" content="Sam's Elite Detailing provides professional mobile and in-shop car detailing services in Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa, FL.">
+    <meta name="keywords" content="Car detailing Wesley Chapel FL, Zephyrhills car detailing, Dade City auto detailing, Land O Lakes car wash, Tampa mobile detailing, Sam's Elite Detailing">
     <meta name="author" content="Sam's Elite Detailing">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Sam's Elite Detailing | Wesley Chapel Car Detailing">
-    <meta property="og:description" content="Professional mobile and in-shop car detailing services serving Wesley Chapel, Florida.">
+    <meta property="og:title" content="Sam's Elite Detailing | Wesley Chapel & Tampa Bay Car Detailing">
+    <meta property="og:description" content="Professional mobile and in-shop car detailing services serving Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa, FL.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Added Nunito for a more human-friendly, inviting title font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- FontAwesome (FA) Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -43,12 +42,19 @@
         "postalCode": "33543",
         "addressCountry": "US"
       },
+      "areaServed": [
+        "Wesley Chapel, FL",
+        "Zephyrhills, FL",
+        "Dade City, FL",
+        "Land O' Lakes, FL",
+        "Tampa, FL"
+      ],
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 28.1884,
         "longitude": -82.3168
       },
-      "description": "Premium mobile and in-shop car detailing services in Wesley Chapel, Florida.",
+      "description": "Premium mobile and in-shop car detailing services in Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa, Florida.",
       "priceRange": "$$"
     }
     </script>
@@ -65,7 +71,6 @@
             --color-white: #ffffff;
             
             --font-heading: 'Montserrat', sans-serif;
-            --font-title: 'Nunito', sans-serif; /* New variable for the friendly title */
             --font-body: 'Open Sans', sans-serif;
             
             --container-width: 1200px;
@@ -168,20 +173,20 @@
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Sam_Client/hero-bg.jpg');
             background-size: cover; background-position: center;
         }
-        .hero-content { max-width: 800px; z-index: 2; }
+        .hero-content { max-width: 850px; z-index: 2; }
         
-        /* Updated Human-Friendly Title Styles */
+        /* Updated Title: Montserrat font + All Caps + Inviting text */
         .hero h1 { 
-            font-family: var(--font-title);
+            font-family: var(--font-heading);
             font-weight: 800;
-            font-size: 3rem; 
+            font-size: 2.5rem; 
             margin-bottom: 1.5rem; 
-            text-transform: none; /* Removed uppercase to feel more natural */
-            letter-spacing: -0.5px;
-            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.15;
         }
         
-        .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: var(--color-silver-light); max-width: 600px; }
+        .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: var(--color-silver-light); max-width: 650px; }
         
         .hero-actions-wrapper { display: flex; flex-direction: column; gap: 1rem; }
         .hero-buttons { display: flex; flex-direction: column; gap: 1rem; }
@@ -191,7 +196,7 @@
         .info-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; text-align: center; }
         .info-item i { font-size: 1.5rem; color: var(--color-white); margin-bottom: 0.5rem; }
         .info-item h3 { font-size: 1.25rem; margin-bottom: 0.25rem; color: var(--color-white); text-transform: uppercase; }
-        .info-item p { color: var(--color-white); margin: 0; font-size: 0.9rem; }
+        .info-item p { color: var(--color-white); margin: 0; font-size: 0.95rem; font-weight: 600; }
 
         /* Services */
         .services-section { background-color: var(--color-black); }
@@ -200,6 +205,41 @@
         .service-icon { font-size: 2rem; color: var(--color-primary); margin-bottom: 1rem; }
         .service-card h3 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-white); }
         .service-card p { flex-grow: 1; }
+
+        /* Add-Ons Section */
+        .addons-section { background-color: var(--color-dark-gray); border-top: 1px solid #2a2a2a; border-bottom: 1px solid #2a2a2a; }
+        .addons-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3rem; }
+        .addon-category-card {
+            background-color: var(--color-black);
+            border: 1px solid var(--color-silver);
+            padding: 2.5rem 2rem;
+            border-top: 4px solid var(--color-primary);
+        }
+        .addon-category-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .addon-category-card h3 i { color: var(--color-primary); }
+        .addon-list { list-style: none; }
+        .addon-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-silver-light);
+            font-size: 1.05rem;
+        }
+        .addon-list li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--color-primary);
+        }
 
         /* About Section & Before/After Slider */
         .split-section { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
@@ -231,26 +271,50 @@
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
             color: var(--color-white); border: 2px solid var(--color-white);
         }
+        .slider-label {
+            position: absolute; bottom: 10px; z-index: 2;
+            background: rgba(0,0,0,0.7); color: #fff;
+            padding: 2px 8px; font-size: 0.75rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px;
+            pointer-events: none;
+        }
+        .slider-label-before { left: 10px; }
+        .slider-label-after { right: 10px; }
 
         .benefit-list { list-style: none; margin-top: 2rem; }
         .benefit-list li { position: relative; padding-left: 2rem; margin-bottom: 1rem; color: var(--color-white); }
         .benefit-list li i { position: absolute; left: 0; top: 4px; color: var(--color-primary); }
 
-        /* Gallery */
-        .gallery-section { background-color: var(--color-dark-gray); }
-        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 3rem; }
-        .gallery-item img { width: 100%; height: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid var(--color-silver); }
+        /* Gallery (18 items: 3 Interactive Sliders + 15 Standard Photos) */
+        .gallery-section { background-color: var(--color-black); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 15px; margin-top: 3rem; }
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border: 1px solid var(--color-silver);
+            background-color: var(--color-dark-gray);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gallery-item.is-slider {
+            aspect-ratio: 1 / 1;
+        }
 
         /* Reviews */
-        .reviews-section { background-color: var(--color-black); }
+        .reviews-section { background-color: var(--color-dark-gray); }
         .reviews-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 3rem; }
-        .review-card { background-color: var(--color-dark-gray); padding: 2rem; border-left: 4px solid var(--color-primary); }
+        .review-card { background-color: var(--color-black); padding: 2rem; border-left: 4px solid var(--color-primary); }
         .stars { color: #f5b301; margin-bottom: 1rem; font-size: 1rem; letter-spacing: 2px; }
         .review-text { font-style: italic; margin-bottom: 1.5rem; color: var(--color-white); }
         .reviewer-name { font-weight: 700; color: var(--color-silver-light); text-transform: uppercase; font-size: 0.875rem; letter-spacing: 1px; }
 
         /* Contact Area */
-        .contact-section { background-color: var(--color-dark-gray); border-top: 2px solid var(--color-primary); }
+        .contact-section { background-color: var(--color-black); border-top: 2px solid var(--color-primary); }
         .contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
         .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
         .contact-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem; }
@@ -259,12 +323,12 @@
 
         /* Forms */
         .form-group { margin-bottom: 1.5rem; }
-        .form-control { width: 100%; padding: 1rem; background-color: var(--color-black); border: 1px solid var(--color-silver); color: var(--color-white); font-family: var(--font-body); font-size: 1rem; }
+        .form-control { width: 100%; padding: 1rem; background-color: var(--color-dark-gray); border: 1px solid var(--color-silver); color: var(--color-white); font-family: var(--font-body); font-size: 1rem; }
         .form-control:focus { outline: none; border-color: var(--color-primary); }
         textarea.form-control { min-height: 120px; resize: vertical; }
 
         /* Footer */
-        .footer { background-color: var(--color-black); padding: 3rem 0; border-top: 1px solid var(--color-dark-gray); }
+        .footer { background-color: var(--color-dark-gray); padding: 3rem 0; border-top: 1px solid #2a2a2a; }
         .footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
 
         /* Floating Mobile CTA */
@@ -283,17 +347,22 @@
 
         /* Media Queries */
         @media (max-width: 480px) {
-            .logo-text { font-size: 1.05rem; } 
-            .hero h1 { font-size: 2.25rem; }
+            .logo-text { font-size: 1.05rem; }
+            .hero h1 { font-size: 2rem; }
+        }
+
+        @media (min-width: 600px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (min-width: 768px) {
-            .hero h1 { font-size: 3.5rem; }
+            .hero h1 { font-size: 3.25rem; }
             .hero p { font-size: 1.25rem; }
             .hero-buttons { flex-direction: row; }
             
             .info-grid { grid-template-columns: repeat(3, 1fr); }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .addons-grid { grid-template-columns: repeat(2, 1fr); }
             .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
             .reviews-grid { grid-template-columns: repeat(2, 1fr); }
             .split-section { grid-template-columns: 1fr 1fr; }
@@ -309,7 +378,6 @@
             .mobile-menu-btn { display: none; }
             
             .services-grid { grid-template-columns: repeat(4, 1fr); }
-            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
             .reviews-grid { grid-template-columns: repeat(4, 1fr); }
             
             .section-title { font-size: 2.5rem; }
@@ -335,6 +403,7 @@
             
             <nav class="nav-links" aria-label="Main Navigation">
                 <a href="#services">Services</a>
+                <a href="#addons">Add-Ons</a>
                 <a href="#about">About</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#reviews">Reviews</a>
@@ -362,6 +431,7 @@
             <a href="https://www.facebook.com/photo/?fbid=122097346869392481&set=a.122097344439392481" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile" style="border: none; padding: 0;"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
         <a href="#services" class="mobile-link">Services</a>
+        <a href="#addons" class="mobile-link">Add-Ons</a>
         <a href="#about" class="mobile-link">About</a>
         <a href="#gallery" class="mobile-link">Gallery</a>
         <a href="#reviews" class="mobile-link">Reviews</a>
@@ -375,14 +445,13 @@
         <section class="hero" id="home">
             <div class="container">
                 <div class="hero-content">
-                    <!-- Changed the title text and applied the new font via CSS -->
-                    <h1>Experience the Joy of a Perfectly Clean Car in Wesley Chapel</h1>
-                    <p>Premium mobile and in-shop car detailing services. We provide comprehensive cleaning, paint correction, and protection to restore your vehicle to peak condition.</p>
+                    <h1>EXPERIENCE THE JOY OF A PERFECTLY CLEAN CAR IN WESLEY CHAPEL</h1>
+                    <p>Premium mobile and in-shop car detailing services serving Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa. We provide comprehensive cleaning, paint correction, and protection to restore your vehicle to peak condition.</p>
                     
                     <div class="hero-actions-wrapper">
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Schedule Service</a>
-                            <a href="tel:+18136023623" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call For A Quote</a>
+                            <a href="tel:+18136023623" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call (813) 602-3623</a>
                         </div>
                     </div>
                 </div>
@@ -395,8 +464,8 @@
                 <div class="info-grid">
                     <div class="info-item">
                         <i class="fa-solid fa-location-dot"></i>
-                        <h3>Location</h3>
-                        <p>Serving Wesley Chapel, FL & Surrounding Areas</p>
+                        <h3>Service Areas</h3>
+                        <p>Wesley Chapel • Zephyrhills • Dade City • Land O' Lakes • Tampa</p>
                     </div>
                     <div class="info-item">
                         <i class="fa-solid fa-car"></i>
@@ -445,30 +514,67 @@
             </div>
         </section>
 
-        <!-- About Section (With Before/After Slider) -->
+        <!-- Add-Ons Section -->
+        <section class="section-padding addons-section" id="addons">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Detailing Add-Ons</h2>
+                    <p>Customize your service with specialized interior and exterior treatments.</p>
+                </div>
+
+                <div class="addons-grid">
+                    <!-- Interior Add-Ons -->
+                    <div class="addon-category-card">
+                        <h3><i class="fa-solid fa-couch"></i> Interior Detail Add-Ons</h3>
+                        <ul class="addon-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Seat extraction</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Pet hair removal</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Seats and floor shampooing</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Leather conditioner</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Odor elimination</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exterior Add-Ons -->
+                    <div class="addon-category-card">
+                        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Exterior Detail Add-Ons</h3>
+                        <ul class="addon-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Engine bay cleaner</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Headlight restoration</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Clay bar treatment / Iron removal</li>
+                            <li><i class="fa-solid fa-circle-check"></i> 3-month wax sealant</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
         <section class="section-padding" id="about">
             <div class="container">
                 <div class="split-section">
                     
                     <!-- Before/After Image Slider -->
                     <div class="slider-container">
+                        <span class="slider-label slider-label-before">Before</span>
+                        <span class="slider-label slider-label-after">After</span>
                         <img src="Sam_Client/about-before.jpg" alt="Car Detail Before" class="slider-image-before">
-                        <img src="Sam_Client/about-after.jpg" alt="Car Detail After" class="slider-image-after" id="sliderAfterImg">
-                        <div class="slider-line" id="sliderLine">
+                        <img src="Sam_Client/about-after.jpg" alt="Car Detail After" class="slider-image-after">
+                        <div class="slider-line">
                             <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
                         </div>
-                        <input type="range" min="0" max="100" value="50" class="slider-input" id="beforeAfterSlider" aria-label="Before and after comparison slider">
+                        <input type="range" min="0" max="100" value="50" class="slider-input" aria-label="Before and after comparison slider">
                     </div>
 
                     <div class="split-content">
                         <h2 class="section-title">Professional Quality, Guaranteed</h2>
-                        <p>Whether utilizing our mobile service at your location or visiting our Wesley Chapel shop, Sam's Elite Detailing provides an unparalleled level of service and automotive care.</p>
+                        <p>Whether utilizing our mobile service at your home or workplace—or visiting our Wesley Chapel location—Sam's Elite Detailing provides an unparalleled level of automotive care across Tampa Bay.</p>
                         
                         <ul class="benefit-list">
-                            <li><i class="fa-solid fa-check"></i> Convenience: Mobile and in-shop service scheduling available.</li>
+                            <li><i class="fa-solid fa-check"></i> Wide Service Coverage: Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa.</li>
                             <li><i class="fa-solid fa-check"></i> Quality Control: Strict adherence to professional detailing standards.</li>
                             <li><i class="fa-solid fa-check"></i> Communication: Seamless booking process and transparent updates.</li>
-                            <li><i class="fa-solid fa-check"></i> Capabilities: Equipped to handle severe interior staining, pet hair, and exterior contamination.</li>
+                            <li><i class="fa-solid fa-check"></i> Heavy-Duty Capabilities: Equipped for severe interior staining, pet hair, and exterior contamination.</li>
                         </ul>
 
                         <div style="margin-top: 2rem;">
@@ -479,23 +585,73 @@
             </div>
         </section>
 
-        <!-- Gallery -->
+        <!-- Gallery (18 Items Total: 3 Sliders + 15 Standard Photos) -->
         <section class="section-padding gallery-section" id="gallery">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title">Work Portfolio</h2>
-                    <p>Examples of our professional detailing results.</p>
+                    <p>18 examples of our detailing results—including interactive Before & After comparisons.</p>
                 </div>
 
                 <div class="gallery-grid">
+                    <!-- Item 1: Before/After Interactive Slider #1 -->
+                    <div class="gallery-item is-slider">
+                        <div class="slider-container" style="height: 100%;">
+                            <span class="slider-label slider-label-before">Before</span>
+                            <span class="slider-label slider-label-after">After</span>
+                            <img src="Sam_Client/gallery-ba-1-before.jpg" alt="Before restoration" class="slider-image-before">
+                            <img src="Sam_Client/gallery-ba-1-after.jpg" alt="After restoration" class="slider-image-after">
+                            <div class="slider-line">
+                                <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider-input" aria-label="Comparison slider 1">
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Before/After Interactive Slider #2 -->
+                    <div class="gallery-item is-slider">
+                        <div class="slider-container" style="height: 100%;">
+                            <span class="slider-label slider-label-before">Before</span>
+                            <span class="slider-label slider-label-after">After</span>
+                            <img src="Sam_Client/gallery-ba-2-before.jpg" alt="Before deep clean" class="slider-image-before">
+                            <img src="Sam_Client/gallery-ba-2-after.jpg" alt="After deep clean" class="slider-image-after">
+                            <div class="slider-line">
+                                <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider-input" aria-label="Comparison slider 2">
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Before/After Interactive Slider #3 -->
+                    <div class="gallery-item is-slider">
+                        <div class="slider-container" style="height: 100%;">
+                            <span class="slider-label slider-label-before">Before</span>
+                            <span class="slider-label slider-label-after">After</span>
+                            <img src="Sam_Client/gallery-ba-3-before.jpg" alt="Before paint correction" class="slider-image-before">
+                            <img src="Sam_Client/gallery-ba-3-after.jpg" alt="After paint correction" class="slider-image-after">
+                            <div class="slider-line">
+                                <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider-input" aria-label="Comparison slider 3">
+                        </div>
+                    </div>
+
+                    <!-- Items 4 through 18: Standard 15 Photos -->
                     <div class="gallery-item"><img src="Sam_Client/gallery-1.jpg" width="400" height="400" alt="Exterior car detailing result" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-2.jpg" width="400" height="400" alt="Interior car cleaning result" loading="lazy"></div>
-                    <div class="gallery-item"><img src="Sam_Client/gallery-3.jpg" width="400" height="400" alt="Paint correction before and after" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-3.jpg" width="400" height="400" alt="Paint correction shine" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-4.jpg" width="400" height="400" alt="Leather conditioning result" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-5.jpg" width="400" height="400" alt="Wheel and tire cleaning" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-6.jpg" width="400" height="400" alt="Engine bay detailing" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-7.jpg" width="400" height="400" alt="Carpet shampooing result" loading="lazy"></div>
                     <div class="gallery-item"><img src="Sam_Client/gallery-8.jpg" width="400" height="400" alt="Finished vehicle exterior" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-9.jpg" width="400" height="400" alt="Ceramic coating gloss" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-10.jpg" width="400" height="400" alt="Interior dashboard detail" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-11.jpg" width="400" height="400" alt="Seat extraction results" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-12.jpg" width="400" height="400" alt="Headlight restoration finish" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-13.jpg" width="400" height="400" alt="Trim restoration detail" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-14.jpg" width="400" height="400" alt="Exhaust tip polishing" loading="lazy"></div>
+                    <div class="gallery-item"><img src="Sam_Client/gallery-15.jpg" width="400" height="400" alt="Mirror finish paint protection" loading="lazy"></div>
                 </div>
             </div>
         </section>
@@ -568,13 +724,14 @@
                     <!-- Contact Info -->
                     <address class="contact-info" style="font-style: normal;">
                         <h2 class="section-title">Contact Information</h2>
-                        <p>Reach out directly to request a quote or schedule your detailing service.</p>
+                        <p>Reach out directly by phone or submit the form to request a free quote and schedule your appointment.</p>
                         
                         <div class="contact-item" style="margin-top: 1rem;">
                             <i class="fa-solid fa-phone"></i>
                             <div class="contact-item-text">
-                                <h4>Phone</h4>
-                                <a href="tel:+18136023623">(813) 602-3623</a>
+                                <h4>Direct Phone / Work Number</h4>
+                                <a href="tel:+18136023623" style="font-size: 1.25rem; font-weight: 700; color: var(--color-white);">(813) 602-3623</a>
+                                <p style="margin: 0.25rem 0 0 0; font-size: 0.85rem;">Call or Text us anytime</p>
                             </div>
                         </div>
 
@@ -587,18 +744,18 @@
                         </div>
 
                         <div class="contact-item">
-                            <i class="fa-solid fa-map-pin"></i>
+                            <i class="fa-solid fa-map-location-dot"></i>
                             <div class="contact-item-text">
-                                <h4>Service Location</h4>
-                                <p>4709 Royal Birkdale Way<br>Wesley Chapel, FL 33543</p>
+                                <h4>Service Areas</h4>
+                                <p>Wesley Chapel • Zephyrhills • Dade City<br>Land O' Lakes • Tampa, FL</p>
                             </div>
                         </div>
                     </address>
 
                     <!-- Contact Form -->
                     <div class="contact-form-wrapper">
-                        <form id="bookingForm" class="booking-form" style="background: var(--color-black); padding: 2.5rem; border: 1px solid var(--color-silver);">
-                            <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Request a Quote</h3>
+                        <form id="bookingForm" class="booking-form" style="background: var(--color-dark-gray); padding: 2.5rem; border: 1px solid var(--color-silver);">
+                            <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Request a Quote / Booking</h3>
                             
                             <div class="form-group">
                                 <label for="name" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Full Name</label>
@@ -616,8 +773,8 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="message" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Service Requested</label>
-                                <textarea id="message" name="message" class="form-control"></textarea>
+                                <label for="message" style="display:block; margin-bottom:0.5rem; font-size:0.9rem;">Service & Add-Ons Requested</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Let us know which package and add-ons you're interested in..."></textarea>
                             </div>
                             
                             <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Submit Request</button>
@@ -632,14 +789,14 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="logo-text" style="margin: 0;">Sam's Elite Detailing</div>
-            <p>&copy; <span id="year"></span> Sam's Elite Detailing. All Rights Reserved. <br> Serving Wesley Chapel, Florida.</p>
+            <p>&copy; <span id="year"></span> Sam's Elite Detailing. All Rights Reserved. <br> Serving Wesley Chapel, Zephyrhills, Dade City, Land O' Lakes, and Tampa, FL.</p>
         </div>
     </footer>
 
     <!-- Floating Mobile CTA -->
     <div class="floating-cta">
         <a href="sms:+18136023623" class="floating-btn" style="background-color: var(--color-dark-gray); color: var(--color-white);"><i class="fa-solid fa-comment-sms"></i> Text Us</a>
-        <a href="tel:+18136023623" class="floating-btn floating-call"><i class="fa-solid fa-phone"></i> Call Us</a>
+        <a href="tel:+18136023623" class="floating-btn floating-call"><i class="fa-solid fa-phone"></i> Call (813) 602-3623</a>
     </div>
 
     <!-- JavaScript -->
@@ -672,15 +829,19 @@
             });
         });
         
-        // Before/After Slider Logic
-        const sliderInput = document.getElementById('beforeAfterSlider');
-        const sliderAfterImg = document.getElementById('sliderAfterImg');
-        const sliderLine = document.getElementById('sliderLine');
+        // Before/After Slider Logic (Handles multiple sliders independently)
+        document.querySelectorAll('.slider-container').forEach(container => {
+            const sliderInput = container.querySelector('.slider-input');
+            const sliderAfterImg = container.querySelector('.slider-image-after');
+            const sliderLine = container.querySelector('.slider-line');
 
-        sliderInput.addEventListener('input', (e) => {
-            const sliderValue = e.target.value;
-            sliderAfterImg.style.clipPath = `inset(0 ${100 - sliderValue}% 0 0)`;
-            sliderLine.style.left = `${sliderValue}%`;
+            if (sliderInput && sliderAfterImg && sliderLine) {
+                sliderInput.addEventListener('input', (e) => {
+                    const sliderValue = e.target.value;
+                    sliderAfterImg.style.clipPath = `inset(0 ${100 - sliderValue}% 0 0)`;
+                    sliderLine.style.left = `${sliderValue}%`;
+                });
+            }
         });
     </script>
 </body>
